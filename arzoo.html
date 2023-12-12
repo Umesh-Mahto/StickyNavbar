@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky NavBar</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+    }
+    #header{
+
+        text-align: center;
+    }
+    #menu-bar{        
+        text-align: center;
+        background-color: aqua;
+    }
+    #menu-bar li{        
+        display: inline-block; 
+        padding: 15px 10px; 
+        font-size: 20px;  
+        font-weight: bold;   
+    }
+    #logo{
+        width: 200px;
+        height: 200px;
+    }
+    #container{
+        text-align: center;
+        padding: 50px 100px;
+    
+    }
+    #pic{
+        width: 70%;
+        height: auto;
+    }
+    .sticky{
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    #para{
+        text-align: justify;
+    }
+</style>
+<body>
+    <div id="header">
+        <img src="BMW-Logo-PNG.png" alt="" id="logo">
+    </div>
+    <nav id="menu-bar" class="sticky" >
+        <li > Home</li>
+        <li >About Us</li>
+        <li >Email</li>
+        <li >Contact</li>
+        <li>Carrier</li>
+    </nav>
+    <div id="container">
+        <h1>About Us</h1>
+        <img id="pic" src="groupPic.jpg" alt="">
+        <p id="para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt dolorem quis fugit animi veritatis itaque laudantium quas laboriosam commodi illum saepe eos, perspiciatis tempore ullam blanditiis possimus tempora repudiandae, minima placeat atque inventore. At eligendi dignissimos ad dolores aliquam vero beatae cupiditate esse natus animi! Dolores natus, at nisi officiis illo odio ducimus in totam illum perferendis asperiores laudantium, veritatis tempore molestiae eius. Qui tempora, reprehenderit illo eius deserunt expedita sapiente a non possimus neque officiis voluptates corporis beatae voluptatum magni molestiae explicabo earum assumenda, voluptate voluptatibus. Laudantium odit reiciendis natus molestias odio libero dolorem quidem alias voluptates inventore veniam, magni, impedit ipsa eius labore recusandae, velit ad aliquid. Expedita eum quas ut dignissimos atque, illum architecto est facilis, quia, quo minus maxime optio modi accusantium culpa. Rerum doloribus laudantium incidunt tempore eligendi minus magni? Amet, ea atque. Facere numquam quam praesentium odit minima, ab, hic porro id soluta repudiandae, consectetur aut odio error voluptas dolor quis adipisci veniam dignissimos assumenda cum! Accusamus doloribus voluptatem repellendus, quae molestias rem magnam nesciunt, ullam minus placeat consequatur a quia eos reiciendis dolorum autem optio, facilis explicabo magni omnis unde. Consectetur delectus, quis quibusdam voluptates provident laboriosam amet molestiae ea mollitia, veniam harum, accusamus inventore. Minima tempora culpa est ut id neque repudiandae odio dolor veritatis, molestias ex dolores facilis eius molestiae error praesentium laboriosam hic vero eos tenetur. Facere perspiciatis repudiandae expedita, veritatis illum voluptates! Impedit aspernatur nostrum voluptates hic iusto quas, repellendus iste vero odio distinctio enim consequuntur sequi culpa, aut sint veritatis reprehenderit officiis quos maxime magni necessitatibus dolore ratione nobis? Quibusdam consectetur, quia facilis minus, optio dolores corporis blanditiis corrupti doloribus delectus neque id. Eius, deserunt, dolor ullam exercitationem aliquid tenetur cumque perspiciatis iure eos tempora eligendi accusamus neque aut quidem nihil nostrum deleniti odit delectus fugit soluta commodi. Deleniti suscipit dolores nostrum excepturi maiores, unde similique tempora ut facere, at est, libero sunt molestiae veniam repellendus? Maxime corrupti possimus harum qui magni impedit mollitia excepturi officiis placeat, ducimus temporibus laboriosam obcaecati fuga, aliquam optio iusto velit quidem officia maiores soluta illum veniam cum. Iste, eum necessitatibus veniam quaerat reprehenderit ducimus ipsam libero omnis repellat sequi nostrum sapiente vel autem cum enim nam, ex similique fugit molestias laboriosam eius repellendus dolor consectetur? Corporis laudantium iste et qui fugiat voluptates voluptatem eveniet a cum temporibus labore, deserunt vero debitis? Ex eligendi iure debitis quos ab cum sint tempore ullam mollitia. Suscipit deleniti neque saepe libero. Eos quis, et atque, accusamus perspiciatis praesentium, nihil natus quae distinctio laudantium commodi quibusdam recusandae ipsa aliquid iure enim facere architecto aperiam corporis at hic? Debitis tenetur sed non at voluptate, maiores laborum a quod officia sit nemo veniam. Eligendi, fugit omnis quisquam in quaerat tenetur, non recusandae, explicabo accusantium placeat nihil. Omnis eveniet, quis corporis rerum suscipit neque pariatur quibusdam vero officia voluptate. Eveniet sequi aliquid a et aspernatur enim delectus, repellat totam pariatur minus reprehenderit nostrum, est corrupti officia ex dolores repellendus qui laboriosam quasi. Molestiae quas animi fugiat fuga iure mollitia culpa?
+        </p>
+    </div>
+    <script>
+        window.addEventListener("scroll",function(){
+            let nav=document.getElementById("menu-bar");
+          if(window.pageYOffset>=204 ){
+            nav.classList.add("sticky");
+          }else{
+            nav.classList.remove("sticky");
+          }
+        });
+    </script>
+</body>
+</html>
